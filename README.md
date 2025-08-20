@@ -249,3 +249,24 @@ After a stay, guests can leave reviews and ratings for properties, providing fee
 
 7. Database Optimizations
 Ensures fast and efficient data retrieval through indexing and optimized queries, which is vital for handling large amounts of users, bookings, and reviews. This keeps the app responsive and scalable as the project grows.
+
+# API Security
+1. Authentication:
+Users must securely log in with credentials (e.g., username/password or OAuth). This ensures only legitimate users access their accounts, protecting personal data and preventing unauthorized actions.
+
+2. Authorization:
+Controls what authenticated users can do—for example, only hosts can manage their properties, and only guests can make bookings. This prevents users from accessing or modifying data they shouldn’t.
+
+3. Rate Limiting:
+Limits the number of requests a user or IP can make in a certain time to prevent abuse like brute-force attacks or denial-of-service. This protects the server’s availability and ensures fair usage.
+
+4. Secure Payment Processing:
+Uses encrypted connections and trusted payment gateways to handle transactions safely, preventing sensitive financial information leaks and fraud.
+
+Why Security is Crucial
+
+Protecting User Data: Personal information like emails, passwords, and profiles must be safeguarded to maintain user trust and comply with privacy laws.
+
+Securing Payments: Financial transactions involve sensitive data that, if compromised, can cause financial loss and legal issues.
+
+Maintaining Service Integrity: Preventing unauthorized access and abuse keeps the platform reliable and trustworthy for all users.
