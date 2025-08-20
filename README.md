@@ -24,35 +24,75 @@ Business analyst (BA):
 Translates customer business needs into requirements
 Understands customer’s business processes
 
-Product owner (PO)
+Responsibility
+A business analyst dives deep into a customer’s workflows and analyzes stakeholder feedback to help a client formulate what their wants look like and align a customer’s vision with what a development team is producing. They translate an abstract product idea into a set of tangible requirements.
+
+# Product owner (PO)
 Holds responsibility for a product vision and evolution
 Makes sure the final product meets customer requirements
 
-Project manager (PM)
+Responsibility
+Holding more responsibility for a product’s success than any other development team member, a product owner is a decision-maker. Balancing both business needs and market trends, they define a business strategy, shape up the product vision, make sure it satisfies customer needs, and manage a product backlog.
+
+# Project manager (PM)
 Makes sure a product or its part is delivered on time and within budget
 Manages and motivates the software development team
 
-UI/UX designer
+Responsibility
+In Agile projects where the focus is on self-management, transparency, and shared ownership, a PM sets up the vision of a product, maintains transparency, fosters communication, searches for improvements in the development process, and makes sure a team delivers more value with each iteration.
+
+# UI/UX designer
 Transforms a product vision into user-friendly designs
 Creates user journeys for the best user experience and highest conversion rates
 
-Software architect
+Responsibility
+A UI designer devises intuitive, easy-to-use, and eye-pleasing interfaces for a product, while the UX part stands for thinking out an entire journey of a user’s interaction with a product.
+
+# Software architect
 Designs a high-level software architecture
 Selects appropriate tools and platforms to implement the product vision
 Sets up code quality standards and performs code reviews
 
-Software developer
+Responsibility
+An architect is an expert-level software engineer who makes executive software design decisions on behalf of an app development team.
+
+# Software developer
 Engineers and stabilizes the product
 Solves any technical problems emerging during the development lifecycle
 
-Quality assurance (QA) engineer
+Responsibility
+A software developer does the actual job and codes an application. And just like an app features a front end and a back end, there are front-end and back-end developers
+
+# Quality assurance (QA) engineer
 Makes sure an application performs according to requirements
 Spots functional and non-functional defects
 
-Test automation engineer
+Responsibility
+The job of a quality assurance engineer is to verify whether an application meets the requirements—both functional and non-functional. Functional requirements define what an application should do, while non-functional requirements specify how it should do that.
+
+# Test automation engineer
 Designs a test automation ecosystem
 Writes and maintains test scripts for automated testing
 
-DevOps engineer
+Responsibility
+A test automation engineer is there to help you test faster and better. To enable that, they develop test automation scripts—small programs that provide reliable and continuous feedback on application quality without any human involvement
+
+# DevOps engineer
 Facilitates cooperation between development and operations teams
 Builds continuous integration and continuous delivery (CI/CD) pipelines for faster delivery
+
+Responsibility
+DevOps engineers serve as a link between the two teams, unifying and automating the software delivery process and helping strike a balance between introducing changes quickly and keeping an application stable.
+
+
+# Technology Stack
+Django, Django REST Framework, PostgreSQL, GraphQL, Celery, Redis, Docker, CI/CD Pipelines
+
+Django: A high-level Python web framework used for building the RESTful API.
+Django REST Framework: Provides tools for creating and managing RESTful APIs.
+PostgreSQL: A powerful relational database used for data storage.
+GraphQL: Allows for flexible and efficient querying of data.
+Celery: For handling asynchronous tasks such as sending notifications or processing payments.
+Redis: Used for caching and session management.
+Docker: Containerization tool for consistent development and deployment environments.
+CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
