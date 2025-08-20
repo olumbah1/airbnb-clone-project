@@ -96,3 +96,134 @@ Celery: For handling asynchronous tasks such as sending notifications or process
 Redis: Used for caching and session management.
 Docker: Containerization tool for consistent development and deployment environments.
 CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+
+# Database Design
+Users, Properties, Bookings, Reviews, and Payments
+
+1. User
+
+Fields:
+
+id (unique identifier)
+
+username
+
+email
+
+password (hashed)
+
+profile_picture
+
+is_host (boolean indicating if user can list properties)
+
+Relationships:
+
+A User can be a host who owns multiple Properties.
+
+A User can book multiple Properties.
+
+A User can write multiple Reviews.
+
+A User can have multiple Payments (for bookings).
+
+2. Property
+
+Fields:
+
+id
+
+host (ForeignKey to User)
+
+title
+
+description
+
+address
+
+price_per_night
+
+max_guests
+
+amenities (e.g., wifi, kitchen)
+
+Relationships:
+
+Each Property belongs to one User (host).
+
+A Property can have many Bookings.
+
+A Property can have many Reviews.
+
+3. Booking
+
+Fields:
+
+id
+
+property (ForeignKey to Property)
+
+guest (ForeignKey to User)
+
+start_date
+
+end_date
+
+total_price
+
+status (e.g., pending, confirmed, canceled)
+
+Relationships:
+
+A Booking belongs to one Property.
+
+A Booking belongs to one User (guest).
+
+A Booking can have one or more Payments associated.
+
+4. Review
+
+Fields:
+
+id
+
+booking (ForeignKey to Booking)
+
+reviewer (ForeignKey to User)
+
+rating (e.g., 1-5 stars)
+
+comment
+
+created_at
+
+Relationships:
+
+A Review belongs to one Booking.
+
+A Review belongs to one User (reviewer).
+
+Through Booking, the review indirectly relates to a Property.
+
+5. Payment
+
+Fields:
+
+id
+
+booking (ForeignKey to Booking)
+
+payer (ForeignKey to User)
+
+amount
+
+payment_method (e.g., credit card, PayPal)
+
+payment_status (e.g., completed, pending)
+
+payment_date
+
+Relationships:
+
+A Payment is associated with one Booking.
+
+A Payment is made by one User (payer).
