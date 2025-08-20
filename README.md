@@ -227,3 +227,25 @@ Relationships:
 A Payment is associated with one Booking.
 
 A Payment is made by one User (payer).
+
+# Feature Breakdown
+1. API Documentation
+This feature provides clear, organized, and interactive documentation for all the project’s API endpoints. It helps developers understand how to interact with the backend services, what data to send and expect, and how to authenticate requests. Good API documentation speeds up development, eases integration, and improves maintainability—especially if you plan to have mobile apps or third-party integrations later.
+
+2. User Authentication
+This feature handles user registration, authentication, and profile management. It allows users to sign up as guests or hosts, manage their personal information, and securely log in and out. Proper user management ensures a personalized experience and controls access to different functionalities.
+
+3. Property Management
+Hosts can create, update, and delete property listings with detailed descriptions, images, pricing, and availability. This feature enables hosts to showcase their spaces effectively and provides guests with comprehensive information to make booking decisions.
+
+4. Booking System
+Guests can search for properties, select dates, and make bookings based on availability. The booking system tracks reservation details, handles booking status (confirmed, pending, canceled), and calculates the total price, facilitating smooth and reliable transactions between guests and hosts.
+
+5. Payment Processing
+The platform securely handles payment transactions between guests and hosts, including various payment methods and status tracking. This feature ensures that payments are processed efficiently and safely, enabling smooth financial operations within the platform.
+
+6. Review System
+After a stay, guests can leave reviews and ratings for properties, providing feedback on their experience. This feature builds trust within the community by helping future guests make informed decisions and encourages hosts to maintain high standards.
+
+7. Database Optimizations
+Ensures fast and efficient data retrieval through indexing and optimized queries, which is vital for handling large amounts of users, bookings, and reviews. This keeps the app responsive and scalable as the project grows.
