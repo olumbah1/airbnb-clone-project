@@ -270,3 +270,7 @@ Protecting User Data: Personal information like emails, passwords, and profiles 
 Securing Payments: Financial transactions involve sensitive data that, if compromised, can cause financial loss and legal issues.
 
 Maintaining Service Integrity: Preventing unauthorized access and abuse keeps the platform reliable and trustworthy for all users.
+
+# CI/CD Pipeline
+
+CI/CD pipelines automate the process of testing, building, and deploying the project whenever changes are made. This helps ensure that code is always in a working state, reduces manual errors, and speeds up delivery of new features or fixes. For this project, tools like GitHub Actions can be used to automate workflows, while Docker can help create consistent environments for building and deploying the app.
